@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3498db;
+    display: flex;
+    align-items: center;
+    font-family: 'mulish', sans-serif;
+    justify-content: center; 
+    height: 100vh;
+    margin: 10;
+}
+
+.popup {
+    background-color: #fff;
+    box-shadow: -4px 4px 5px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding:20px 30px;
+    text-align: center;
+    max-width: 500px;
+}
+
+.popup p{
+    color: #555;
+
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    background-color: #3498db;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px 13px;
+    position: relative;
+    margin: 10px;
+}
+
+.btn:active {
+    box-shadow: none;
+    transform: scale(0.98);
+}
+
+.btn:focus {
+    box-shadow: none;
+    transform: scale(0.98);
+}
+
+.btn.ghost {
+    background-color: #fff;
+    color: #3498db;
+    box-shadow: none;
+}
+
+.btn.ghost span {
+    background-color: #3498db;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 3px 7px ;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    transform: rotate(10deg);
+}
+
+.btn.other {
+    background-color: #fff;
+    color: #3498db;
+    position: absolute;
+    margin-top: -40vh;
+}
+
+.btn.other:hover {
+    transform: scale(0.98);
+}
